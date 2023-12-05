@@ -1,2 +1,87 @@
-# DIDs 268,269,271,274,284,318,320,321,322,324,325,355,381,389,391,396,1043,1769,1771,1772,1775,1776,2333,2334,2346,2351,2487,2488,2496,2735,3016
+1043,1769,1771,1772,1775,1776,2333,2334,2346,2351,2487,2488,2496,2735,3016
+
+#### Vitocal250 DIDs based one MyHomeMyData
+## get data by: python3 Open3Eclient.py -c can0 -dev vcal -m localhost:1883:open3e/vitocal -mfstr {didNumber:04d}_{didName} -t 30 -r 268,269,271,274,284,318,320,321,322,324,325,355,381,389,391,396,1043,1769,1771,1772,1775,1776,2333,2334,2346,2351,2487,2488,2496,2735,3016
+## Use format String -mfstr {didNumber:04d} for only getting numbers
+# DIDs 268,269,271,274,284
+    - state_topic: open3e/vitocal/268
+      name: Open3e Vitocal 268      
+      unique_id: open3e_vitocal_268
+      icon: mdi:tbd
+
+    - state_topic: open3e/vitocal/269
+      name: Open3e Vitocal 269      
+      unique_id: open3e_vitocal_269
+      icon: mdi:tbd
+
+    - state_topic: open3e/vitocal/271
+      name: Open3e Vitocal 271      
+      unique_id: open3e_vitocal_271
+      icon: mdi:tbd
+
+    - state_topic: open3e/vitocal/274
+      name: Open3e Vitocal 274      
+      unique_id: open3e_vitocal_274
+      icon: mdi:tbd
+
+    - state_topic: open3e/vitocal/284
+      name: Open3e Vitocal 284
+      unique_id: open3e_vitocal_284
+      icon: mdi:tbd
+
+#318,320,321,322,324,325,355,381,389,391,396,
+    - state_topic: open3e/vitocal/318
+      name: Open3e Vitocal 318
+      unique_id: open3e_vitocal_318
+      icon: mdi:tbd
+
+    - state_topic: open3e/vitocal/320
+      name: Open3e Vitocal 320 
+      unique_id: open3e_vitocal_320
+      icon: mdi:tbd
+
+    - state_topic: open3e/vitocal/321
+      name: Open3e Vitocal 321  
+      unique_id: open3e_vitocal_321
+      icon: mdi:tbd
+
+    - state_topic: open3e/vitocal/322
+      name: Open3e Vitocal 322    
+      unique_id: open3e_vitocal_322
+      icon: mdi:tbd
+
+    - state_topic: open3e/vitocal/324
+      name: Open3e Vitocal 324
+      unique_id: open3e_vitocal_324
+      icon: mdi:tbd
+
+    - state_topic: open3e/vitocal/381
+      name: Open3e Vitocal 381
+      unique_id: open3e_vitocal_381
+      icon: mdi:tbd
+
+    - state_topic: open3e/vitocal/389
+      name: Open3e Vitocal 389
+      unique_id: open3e_vitocal_389
+      icon: mdi:tbd
+
+    - state_topic: open3e/vitocal/391
+      name: Open3e Vitocal 391 
+      unique_id: open3e_vitocal_391
+      icon: mdi:tbd
+
+    - state_topic: open3e/vitocal/396
+      name: Open3e Vitocal 396
+      unique_id: open3e_vitocal_396
+      icon: mdi:tbd
+
+#1043,1769,1771,1772,1775,1776
+
+#2333,2334,2346,2351,2487,2488,2496,2735
+
+#3016
+
+
+
+
 
