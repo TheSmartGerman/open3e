@@ -1,5 +1,3 @@
-## Still under developmnet ##
-
 #####################################################################
 #### Vitocal250 DIDs based one MyHomeMyData                       ###
 #### https://github.com/MyHomeMyData/iob.vis.vitocal250           ###
@@ -7,8 +5,9 @@
 ##
 ## get data by: python3 Open3Eclient.py -c can0 -dev vcal -m localhost:1883:open3e/vitocal -mfstr {didNumber:04d}_{didName} -t 30 -r 268,269,271,274,284,318,320,321,322,324,325,355,381,389,391,396,1043,1769,1771,1772,1775,1776,2333,2334,2346,2351,2487,2488,2496,2735,3016
 
+# 268,269,271,274,284
 - state_topic: open3e/vitocal250/0268_FlowTemperatureSensor/Actual
-  name: Vitocal250 Flow Temperature Sensor
+  name: Vitocal 250 Flow Temperature Sensor
   unique_id: 0268_FlowTemperatureSensor
   state_class: measurement
   device_class: temperature
@@ -16,7 +15,7 @@
   unit_of_measurement: "°C"
 
 - state_topic: open3e/vitocal250/0269_ReturnTemperatureSensor/Actual
-  name: Vitocal250 Return Temperature Sensor
+  name: Vitocal 250 Return Temperature Sensor
   unique_id: 0269_ReturnTemperatureSensor
   state_class: measurement
   device_class: temperature
@@ -24,7 +23,7 @@
   unit_of_measurement: "°C"
 
 - state_topic: open3e/vitocal250/0271_DomesticHotWaterSensor/Actual
-  name: Vitocal250 Domestic Hot Water Sensor
+  name: Vitocal 250 Domestic Hot Water Sensor
   unique_id: 0271_DomesticHotWaterSensor
   state_class: measurement
   device_class: temperature
@@ -33,7 +32,7 @@
 
 #open3e/vitocal250/0274_OutsideTemperatureSensor
 - state_topic: open3e/vitocal250/0274_OutsideTemperatureSensor/Actual
-  name: Vitocal250 Outside Temperature Sensor
+  name: Vitocal 250 Outside Temperature Sensor
   unique_id: 0274_OutsideTemperatureSensor
   state_class: measurement
   device_class: temperature
@@ -41,15 +40,17 @@
   unit_of_measurement: "°C"
 
 - state_topic: open3e/vitocal250/0284_MixerOneCircuitFlowTemperatureSensor/Actual
-  name: Vitocal250 Mixer One Circuit Flow Temperature Sensor
+  name: Vitocal 250 Mixer One Circuit Flow Temperature Sensor
   unique_id: 0284_MixerOneCircuitFlowTemperatureSensor
   state_class: measurement
   device_class: temperature
   icon: mdi:thermometer
   unit_of_measurement: "°C"
 
+  # 318,320,321,322,324,325,355,381,389,391,396
+
 - state_topic: open3e/vitocal250/0318_WaterPressureSensor/Actual
-  name: Vitocal250 Water Pressure Sensor
+  name: Vitocal 250 Water Pressure Sensor
   unique_id: 0318_WaterPressureSensor
   state_class: measurement
   device_class: pressure
@@ -57,7 +58,7 @@
   unit_of_measurement: "bar"
 
 - state_topic: open3e/vitocal250/0320_PrimaryHeatExchangerLiquidTemperatureSensor/Actual
-  name: Vitocal250 Primary Heat Exchanger Liquid Temperature Sensor
+  name: Vitocal 250 Primary Heat Exchanger Liquid Temperature Sensor
   unique_id: 0320_PrimaryHeatExchangerLiquidTemperatureSensor
   state_class: measurement
   device_class: temperature
@@ -65,7 +66,7 @@
   unit_of_measurement: "°C"
 
 - state_topic: open3e/vitocal250/0321_CompressorInletTemperatureSensor/Actual
-  name: Vitocal250 Compressor Inlet Temperature Sensor
+  name: Vitocal 250 Compressor Inlet Temperature Sensor
   unique_id: 0321_CompressorInletTemperatureSensor
   state_class: measurement
   device_class: temperature
@@ -73,7 +74,7 @@
   unit_of_measurement: "°C"
 
 - state_topic: open3e/vitocal250/0322_CompressorInletPressureSensor/Actual
-  name: Vitocal250 Compressor Inlet Pressure Sensor
+  name: Vitocal 250 Compressor Inlet Pressure Sensor
   unique_id: 0322_CompressorInletPressureSensor
   state_class: measurement
   device_class: temperature
@@ -82,7 +83,7 @@
 
   #open3e/vitocal250/0324_CompressorOutletTemperatureSensor
 - state_topic: open3e/vitocal250/0324_CompressorOutletTemperatureSensor/Actual
-  name: Vitocal250 Compressor Outlet TemperatureSensor
+  name: Vitocal 250 Compressor Outlet TemperatureSensor
   unique_id: 0324_CompressorOutletTemperatureSensor
   state_class: measurement
   device_class: temperature
@@ -91,7 +92,7 @@
 
 #open3e/vitocal250/0325_CompressorOutletPressureSensor
 - state_topic: open3e/vitocal250/0325_CompressorOutletPressureSensor/Actual
-  name: Vitocal250 Compressor Outlet Pressure Sensor
+  name: Vitocal 250 Compressor Outlet Pressure Sensor
   unique_id: 0325_CompressorOutletPressureSensor
   state_class: measurement
   device_class: pressure
@@ -100,7 +101,7 @@
 
 #open3e/vitocal250/0355_SecondaryHeatExchangerLiquidTemperatureSensor
 - state_topic: open3e/vitocal250/0355_SecondaryHeatExchangerLiquidTemperatureSensor/Actual
-  name: Vitocal250 Secondary Heat Exchanger Liquid Temperature Sensor
+  name: Vitocal 250 Secondary Heat Exchanger Liquid Temperature Sensor
   unique_id: 0355_SecondaryHeatExchangerLiquidTemperatureSensor
   state_class: measurement
   device_class: pressure
@@ -114,33 +115,35 @@
 
 #open3e/vitocal250/0389_ElectronicExpansionValveOneCurrentPositionPercent
 - state_topic: open3e/vitocal250/0389_ElectronicExpansionValveOneCurrentPositionPercent
-  name: Vitocal250 Electronic Expansion Valve One Current Position Percent
+  name: Vitocal 250 Electronic Expansion Valve One Current Position Percent
   unique_id: 0389_ElectronicExpansionValveOneCurrentPositionPercent
   unit_of_measurement: "%"
 
 #open3e/vitocal250/0391_ElectronicExpansionValveTwoCurrentPositionPercent
 - state_topic: open3e/vitocal250/0391_ElectronicExpansionValveTwoCurrentPositionPercent
-  name: Vitocal250 Electronic Expansion Valve Two Current Position Percent
+  name: Vitocal 250 Electronic Expansion Valve Two Current Position Percent
   unique_id: 0391_ElectronicExpansionValveTwoCurrentPositionPercent
   unit_of_measurement: "%"
 
 #open3e/vitocal250/0396_DomesticHotWaterTemperatureSetpoint
-- state_topic: open3e/vitocal250/0396_DomesticHotWaterTemperatureSetpoint/Actual
-  name: Vitocal250 Domestic HotWater Temperature Setpoint
+- state_topic: open3e/vitocal250/0396_DomesticHotWaterTemperatureSetpoint
+  name: Vitocal 250 Domestic HotWater Temperature Setpoint
   unique_id: 0396_DomesticHotWaterTemperatureSetpoint
   state_class: measurement
   device_class: temperature
   icon: mdi:thermometer
   unit_of_measurement: "°C"
 
+  #1043,1769,1771,1772,1775,1776,
+
 #open3e/vitocal250/1043_AllengraSensor
-- state_topic: open3e/vitocal250/1043_AllengraSensor
+- state_topic: open3e/vitocal250/1043_AllengraSensor/Actual
   name: Vitocal 250 Allengra Sensor
   unique_id: 1043_AllengraSensor
 
 #open3e/vitocal250/1769_PrimaryInletTemperatureSensor
 - state_topic: open3e/vitocal250/1769_PrimaryInletTemperatureSensor/Actual
-  name: Vitocal250 Primary Inlet Temperature Sensor
+  name: Vitocal 250 Primary Inlet Temperature Sensor
   unique_id: 1769_PrimaryInletTemperatureSensor
   state_class: measurement
   device_class: temperature
@@ -149,8 +152,17 @@
 
 #open3e/vitocal250/1771_EngineRoomTemperatureSensor
 - state_topic: open3e/vitocal250/1771_EngineRoomTemperatureSensor/Actual
-  name: Vitocal250 Engine Room Temperature Sensor
+  name: Vitocal 250 Engine Room Temperature Sensor
   unique_id: 1771_EngineRoomTemperatureSensor
+  state_class: measurement
+  device_class: temperature
+  icon: mdi:thermometer
+  unit_of_measurement: "°C"
+
+#open3e/vitocal250/1772_CompressorOilTemperatureSensor/Actual
+- state_topic: open3e/vitocal250/1772_CompressorOilTemperatureSensor/Actual
+  name: Vitocal 250 Compressor Oil Temperature Sensor
+  unique_id: 1772_CompressorOilTemperatureSensor
   state_class: measurement
   device_class: temperature
   icon: mdi:thermometer
@@ -158,7 +170,7 @@
 
 #open3e/vitocal250/1775_PrimaryCircuitFanOne
 - state_topic: open3e/vitocal250/1775_PrimaryCircuitFanOne
-  name: Vitocal250 Primary Circuit Fan One
+  name: Vitocal 250 Primary Circuit Fan One
   unique_id: 1775_PrimaryCircuitFanOne
   state_class: measurement
   device_class: speed
@@ -167,16 +179,18 @@
 
 #open3e/vitocal250/1776_PrimaryCircuitFanTwo
 - state_topic: open3e/vitocal250/1776_PrimaryCircuitFanTwo
-  name: Vitocal250 Primary Circuit Fan Two
+  name: Vitocal 250 Primary Circuit Fan Two
   unique_id: 1776_PrimaryCircuitFanTwo
   state_class: measurement
   device_class: speed
   icon: mdi:fan
   unit_of_measurement: "%"
 
+  #2333,2334,2346,2351,2487,2488,2496,2735,3016
+
 #open3e/vitocal250/2333_EconomizerLiquidTemperatureSensor
 - state_topic: open3e/vitocal250/2333_EconomizerLiquidTemperatureSensor/Actual
-  name: Vitocal250 Economizer Liquid Temperature Sensor
+  name: Vitocal 250 Economizer Liquid Temperature Sensor
   unique_id: 2333_EconomizerLiquidTemperatureSensor
   state_class: measurement
   device_class: temperature
@@ -185,7 +199,7 @@
 
 #open3e/vitocal250/2334_EvaporatorVaporTemperatureSensor
 - state_topic: open3e/vitocal250/2334_EvaporatorVaporTemperatureSensor/Actual
-  name: Vitocal250 Evaporator Vapor Temperature Sensor
+  name: Vitocal 250 Evaporator Vapor Temperature Sensor
   unique_id: 2334_EvaporatorVaporTemperatureSensor
   state_class: measurement
   device_class: temperature
@@ -208,7 +222,7 @@
 
 #open3e/vitocal250/2487_CurrentElectricalPowerConsumptionElectricHeater
 - state_topic: open3e/vitocal250/2487_CurrentElectricalPowerConsumptionElectricHeater
-  name: Vitocal250 Current Electrical Power Consumption Electric Heater
+  name: Vitocal 250 Current Electrical Power Consumption Electric Heater
   unique_id: 2487_CurrentElectricalPowerConsumptionElectricHeater
   state_class: measurement
   device_class: power
@@ -216,7 +230,7 @@
   unit_of_measurement: "W"
 
 - state_topic: open3e/vitocal250/2488_CurrentElectricalPowerConsumptionSystem
-  name: Vitocal250 Current Electrical Power Consumption System
+  name: Vitocal 250 Current Electrical Power Consumption System
   unique_id: 2488_CurrentElectricalPowerConsumptionSystem
   state_class: measurement
   device_class: power
@@ -224,7 +238,7 @@
   unit_of_measurement: "W"
 
 - state_topic: open3e/vitocal250/2496_CurrentThermalCapacitySystem
-  name: Vitocal250 Current Thermal Capacity System
+  name: Vitocal 250 Current Thermal Capacity System
   unique_id: 2496_CurrentThermalCapacitySystem
   state_class: measurement
   device_class: power
@@ -238,7 +252,7 @@
 
   #open3e/vitocal250/3016_HeatingBufferTemperatureSensor
 - state_topic: open3e/vitocal250/3016_HeatingBufferTemperatureSensor/Actual
-  name: Vitocal250 Heating Buffer Temperature Sensor
+  name: Vitocal 250 Heating Buffer Temperature Sensor
   unique_id: 3016_HeatingBufferTemperatureSensor
   state_class: measurement
   device_class: temperature
