@@ -1,5 +1,12 @@
 ## Still under developmnet ##
 
+#####################################################################
+#### Vitocal250 DIDs based one MyHomeMyData                       ###
+#### https://github.com/MyHomeMyData/iob.vis.vitocal250           ###
+#####################################################################
+##
+## get data by: python3 Open3Eclient.py -c can0 -dev vcal -m localhost:1883:open3e/vitocal -mfstr {didNumber:04d}_{didName} -t 30 -r 268,269,271,274,284,318,320,321,322,324,325,355,381,389,391,396,1043,1769,1771,1772,1775,1776,2333,2334,2346,2351,2487,2488,2496,2735,3016
+
 - state_topic: open3e/vitocal250/0268_FlowTemperatureSensor/Actual
   name: Vitocal250 Flow Temperature Sensor
   unique_id: 0268_FlowTemperatureSensor
